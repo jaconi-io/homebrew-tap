@@ -5,21 +5,21 @@
 class FluxEnvsubst < Formula
   desc "Environment variable substitution for Flux"
   homepage "https://jaconi.io/"
-  version "4.0.6"
+  version "4.0.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.6/flux-envsubst_4.0.6_darwin_amd64.tar.gz"
-      sha256 "c396f9a03f0cbccf84e7deae2b5b9e9c05f84abb797b9f005541cd7ae1b6d15a"
+      url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.7/flux-envsubst_4.0.7_darwin_amd64.tar.gz"
+      sha256 "e87544352638949256f32dba84405e40b943dc49dab1e46a7ebe8037607a0e5e"
 
       def install
         bin.install "flux-envsubst"
       end
     end
     on_arm do
-      url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.6/flux-envsubst_4.0.6_darwin_arm64.tar.gz"
-      sha256 "0e3faa571828e796f16c3fde92ab322aac30ecc2fb4691e3e41d59c269841af3"
+      url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.7/flux-envsubst_4.0.7_darwin_arm64.tar.gz"
+      sha256 "32e1d59cf521ee1d99a6e8d886cc439fd194216652a2748b9408cab089c570ac"
 
       def install
         bin.install "flux-envsubst"
@@ -30,8 +30,8 @@ class FluxEnvsubst < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.6/flux-envsubst_4.0.6_linux_amd64.tar.gz"
-        sha256 "8ab9fffaecbb66b9d928959894c3f9b563d286bbae1044dd559aeaa14f9c5a58"
+        url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.7/flux-envsubst_4.0.7_linux_amd64.tar.gz"
+        sha256 "a541ceca0f43e2c4e468887c33430c8cf41e4c1aef21f9dfce7f59e07f4a8a0e"
 
         def install
           bin.install "flux-envsubst"
@@ -40,8 +40,8 @@ class FluxEnvsubst < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.6/flux-envsubst_4.0.6_linux_arm64.tar.gz"
-        sha256 "60a646fc62bb04d7d33daec3ea2f6ebf7be869cd378c8d4d68cdb17d62446243"
+        url "https://github.com/jaconi-io/flux-envsubst/releases/download/v4.0.7/flux-envsubst_4.0.7_linux_arm64.tar.gz"
+        sha256 "ad5854b6af16faecc92d719794537613f58b20e25b9ff1dfc8bae3785518cc35"
 
         def install
           bin.install "flux-envsubst"
